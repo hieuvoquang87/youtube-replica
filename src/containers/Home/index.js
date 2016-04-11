@@ -5,6 +5,7 @@ import DocumentMeta from 'react-document-meta';
 import { TopImage } from 'components/TopImage';
 import { Tools } from 'components/Tools';
 import { Projects } from 'components/Projects';
+import { SearchBar } from 'components/SearchBar';
 
 const metaData = {
   title: 'React Redux Boilerplate',
@@ -23,9 +24,7 @@ export class Home extends Component {
     return (
       <section>
         <DocumentMeta {...metaData} />
-        <TopImage />
-        <Tools />
-        <Projects />
+        <SearchBar />
       </section>
     );
   }

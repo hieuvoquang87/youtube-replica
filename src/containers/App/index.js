@@ -17,7 +17,6 @@ export class App extends Component {
       <section>
         <Header />
         {this.props.children}
-        <Footer />
       </section>
     );
   }

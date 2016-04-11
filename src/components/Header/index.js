@@ -7,7 +7,7 @@ import { styles } from './styles.scss';
 export class Header extends Component {
   render() {
     return (
-      <header className={`${styles}`}>
+      <header className={`${styles}` }>
         <div className="container">
           <div className="row">
             <div className="col-xs-5 col-sm-3 col-md-3 col-lg-3 logo">
