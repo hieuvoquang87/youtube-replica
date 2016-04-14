@@ -97,12 +97,16 @@
     "webpack-merge": "^0.7.3"
   },
   "dependencies": {
+    "axios": "^0.9.1",
     "jquery": "^2.2.0",
+    "lodash": "^4.9.0",
     "react": "^0.14.6",
     "react-redux": "^4.0.6",
     "react-router": "^2.0.0-rc5",
     "react-router-redux": "^4.0.0-rc.2",
     "redux": "^3.1.4",
-    "scroll-behavior": "^0.3.4"
+    "redux-thunk": "^2.0.1",
+    "scroll-behavior": "^0.3.4",
+    "youtube-api-search": "0.0.5"
   }
 }
