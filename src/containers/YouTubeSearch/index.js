@@ -14,10 +14,11 @@ import { SearchBar } from 'components/SearchBar';
 import { VideoList } from 'components/VideoList';
 import { YouTubeFrame } from 'components/YouTubeFrame';
 
-
-
 @connect(state => state.videos, dispatch => bindActionCreators(actionCreators, dispatch))
 export class YouTubeSearch extends Component {
+    componentWillMount () {
+        this.props.searchVideo('');
+    }
     render () {
         return (
             <section className={`${styles}`}>

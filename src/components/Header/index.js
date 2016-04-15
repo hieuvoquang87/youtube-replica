@@ -21,12 +21,8 @@ export class Header extends Component {
                 <Link to="/home" activeClassName="active">
                   Home
                 </Link>
-                <Link to="/list" activeClassName="active">
-                  Redux
-                </Link>
               </nav>
             </div>
-
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs text-right">
               <a href="https://github.com/anorudes/redux-easy-boilerplate">
                 Fork me on GitHub

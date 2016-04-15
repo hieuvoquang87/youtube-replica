@@ -1,4 +1,9 @@
 :local(.styles) {
+  height: 500px;
+  overflow: scroll;
+  overflow-scrolling: auto;
+  -webkit-overflow-scrolling: touch;
+
   .media-left {
     width: 30%;
   }
