@@ -5,14 +5,14 @@ import { styles } from './styles.scss';
 
 export class SearchBar extends Component {
     static propTypes = {
-        onSearchTermInput: PropTypes.func.isRequired
+        onSearchTermChange: PropTypes.func.isRequired
     }
     constructor (props) {
         super(props);
         this.state = {
             term: ''
         };
-        this.debounceSearchTermChange = _.debounce((term) => this.props.onSearchTermInput(term), 500);
+        this.debounceSearchTermChange = _.debounce((term) => this.props.onSearchTermChange(term), 500);
     }
     onInputChange (event) {
         const term = event.target.value;

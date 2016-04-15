@@ -8,7 +8,7 @@ export class YouTubeFrame extends Component {
         super(props);
     }
     render () {
-        const video = this.props.selectedVideo;//this.props.video ? this.props.video : this.props.videos[0];
+        const video = this.props.selectedVideo ? this.props.selectedVideo : this.props.videos[0];
         if(!video) {
             return <div>Loading ...</div>
         }
