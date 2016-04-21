@@ -10,7 +10,6 @@ export class VideoListItem extends Component {
                 <div className='media-left'>
                     <img className='media-object' src={this.props.video.snippet.thumbnails.default.url}/>
                 </div>
-
                 <div className='media-body'>
                     <div className='media-heading'>
                         {this.props.video.snippet.title}

@@ -9,6 +9,7 @@ import {Projects} from 'components/Projects';
 
 
 import {YouTubeSearch} from 'containers/YouTubeSearch';
+import {Collections} from 'containers/Collections';
 
 const metaData = {
     title: 'YouTube Replica',
@@ -28,6 +29,7 @@ export class Home extends Component {
             <section>
                 <DocumentMeta {...metaData} />
                 <YouTubeSearch />
+                <Collections />
             </section>
         );
     }

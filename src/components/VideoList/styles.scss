@@ -1,13 +1,18 @@
 :local(.styles) {
-  height: 500px;
+  margin-bottom: 20px;
   overflow: scroll;
   overflow-scrolling: auto;
   -webkit-overflow-scrolling: touch;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 
   .media-left {
     width: 30%;
   }
   .media-body {
     width: 70%;
+  }
+  .list-group {
+    height: 500px;
   }
 }
