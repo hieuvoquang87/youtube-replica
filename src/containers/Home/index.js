@@ -28,8 +28,12 @@ export class Home extends Component {
         return (
             <section>
                 <DocumentMeta {...metaData} />
-                <YouTubeSearch />
-                <Collections />
+                <div className="row">
+                    <YouTubeSearch />
+                </div>
+                <div className="row">
+                    <Collections />
+                </div>
             </section>
         );
     }

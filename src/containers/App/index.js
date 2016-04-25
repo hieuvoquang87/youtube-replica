@@ -14,8 +14,7 @@ export class App extends Component {
 
   render() {
     return (
-      <section>
-        <Header />
+      <section className="container">
         {this.props.children}
       </section>
     );

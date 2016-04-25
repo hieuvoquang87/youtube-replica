@@ -2,11 +2,13 @@
  * Created by hieuvo on 4/10/16.
  */
 import { List, Map} from 'immutable';
-import { UPDATE_VIDEOS, SELECT_VIDEO } from 'actions/videos';
+import { UPDATE_VIDEOS, SELECT_VIDEO} from 'actions/videos';
+
+import {ActionTypes as CollectionsActionTypes} from 'actions/collections_actions';
 
 const initialState = {
     videos: [],
-    selectedVideo: null
+    selectedVideo: null,
 };
 
 export function videos (state = initialState, action) {
@@ -17,7 +19,12 @@ export function videos (state = initialState, action) {
             return {
                 ...state,
                 selectedVideo: action.payload
-            }
+            };
+        case CollectionsActionTypes.PLAY_SELECTED_VIDEO:
+            return {
+                ...state,
+                selectedVideo: action.payload
+            };
         default:
             return state;
     }

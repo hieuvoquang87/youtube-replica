@@ -16,15 +16,13 @@ export class VideoList extends Component  {
         super(props);
         this.renderVideoList = this.renderVideoList.bind(this);
     }
-    onItemSelected () {
-
-    }
     renderVideoList () {
         return this.props.videos.map((video) => {
             return <VideoListItem
                 video={video}
                 key={video.etag}
                 onItemSelected={this.props.onItemSelected}
+                onVideoToCollectionAdded={this.props.onVideoToCollectionAdded}
             />
         });
     }
